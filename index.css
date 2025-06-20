@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f8;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "item1 item2 item2 item2"
+        "item1 item3 item3 item4"
+        "item1 item3 item3 item5"
+        "item1 item6 item6 item7"; 
+    grid-template-columns: 240px 1fr 1fr 320px;
+    grid-template-rows: 80px 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.content > div {
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.web-side-nav {
+    grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+}
+
+.dashboard {
+    grid-area: item2;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.welcome {
+    grid-area: item3;
+    margin: 1rem;
+    border-radius: 2px;
+}
+
+.total-expenses {
+    grid-area: item4;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 12px;
+}
+
+.saving-goals {
+    grid-area: item5;
+    margin: 0 1rem 1rem 0;
+    border-radius: 12px;
+}
+
+.booking-history {
+    grid-area: item6;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 12px;
+}
+
+.rectangle {
+    grid-area: item7;
+    margin: 0 1rem 1rem 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 0.5rem;
+}
