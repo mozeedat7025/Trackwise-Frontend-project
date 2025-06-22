@@ -25,54 +25,50 @@ body {
     gap: 0;
 }
 
-/* Sidebar - Full height with proper styling */
 .web-side-nav {
     grid-area: sidebar;
     background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0; /* Remove padding to let image fill completely */
+    padding: 0; 
     color: white;
     margin: 0;
     overflow: hidden;
 }
 
-/* Header */
 .dashboard {
     grid-area: header;
     background: white;
     border-bottom: 1px solid #e5e7eb;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the image */
-    padding: 0; /* Remove padding */
+    justify-content: center; 
+    padding: 0; 
     margin: 0;
     overflow: hidden;
 }
 
-/* Main content area with stats cards */
 .welcome {
     grid-area: main-content;
     background: white;
     margin: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 0; /* Remove padding */
+    padding: 0; 
     display: flex;
     flex-direction: column;
     min-height: 0;
     overflow: hidden;
 }
 
-/* Chart section */
 .total-expenses {
     grid-area: chart;
     background: white;
     margin: 1rem 1rem 1rem 0;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 0; /* Remove padding */
+    padding: 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,14 +77,13 @@ body {
     overflow: hidden;
 }
 
-/* Saving goals */
 .saving-goals {
     grid-area: goals;
     background: white;
     margin: 0 1rem 1rem 0;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 0; /* Remove padding */
+    padding: 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,14 +92,13 @@ body {
     overflow: hidden;
 }
 
-/* Table section */
 .booking-history {
     grid-area: table;
     background: white;
     margin: 0 1rem 1rem 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 0; /* Remove padding */
+    padding: 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,7 +107,6 @@ body {
     overflow: hidden;
 }
 
-/* Insight card */
 .rectangle {
     grid-area: insight;
     background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
@@ -124,7 +117,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0; /* Remove padding */
+    padding: 0; 
     overflow: hidden;
 }
 
@@ -136,16 +129,14 @@ body {
     align-items: center;
 }
 
-/* SOLUTION: Use object-fit: fill to completely fill containers without gaps */
 .content img {
     width: 100%;
     height: 100%;
-    object-fit: fill; /* Fills container completely, may stretch */
+    object-fit: fill;
     display: block;
     border-radius: 8px;
 }
 
-/* Specific adjustments for each container */
 .web-side-nav img {
     width: 100%;
     height: 100%;
@@ -195,17 +186,14 @@ body {
     border-radius: 8px;
 }
 
-/* Alternative: If you want to stretch images to fill completely (may distort) */
 .content .stretch-fill img {
     object-fit: fill;
 }
 
-/* Alternative: If you want to crop images but maintain aspect ratio */
 .content .crop-fit img {
     object-fit: cover;
 }
 
-/* Alternative: For images that should maintain original size */
 .content .original-size img {
     width: auto;
     height: auto;
@@ -214,7 +202,6 @@ body {
     object-fit: none;
 }
 
-/* Responsive design */
 @media screen and (max-width: 1200px) {
     .content {
         grid-template-columns: 200px 1fr 1fr 280px;
