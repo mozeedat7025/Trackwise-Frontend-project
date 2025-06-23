@@ -118,7 +118,7 @@ body {
     font-family: poppin;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Changed from flex-start */
+    justify-content: space-between; 
     align-items: flex-start;
     padding: 1.2rem 1rem 1.8rem 1rem; 
     overflow: visible;
@@ -136,7 +136,7 @@ body {
     width: 100%;
     color: white;
     height: auto;
-    flex-grow: 1; /* Added this */
+    flex-grow: 1; 
 }
 
 .rectangle-594 p {
@@ -161,8 +161,8 @@ body {
 }
 
 .rectangle-594 button {
-    margin-top: auto; /* Changed from 0.5rem */
-    margin-bottom: 1rem; /* Added this for space at bottom */
+    margin-top: auto;
+    margin-bottom: 1rem; 
     padding: 0.5rem 1rem; 
     background-color: white;
     color: black;
@@ -172,7 +172,7 @@ body {
     font-size: 11px; 
     cursor: pointer;
     transition: all 0.3s ease;
-    align-self: center; /* Changed from flex-start to center */
+    align-self: center; 
     flex-shrink: 0; 
 }
 
